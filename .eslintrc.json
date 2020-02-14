@@ -1,0 +1,68 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "jsx-a11y"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "printWidth": 100
+      }
+    ],
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "no-console": "warn",
+    "react/prop-types": "off",
+    "react/jsx-fragments": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/sort-comp": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/order": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "lines-between-class-members": "off",
+    "max-classes-per-file": "off",
+    "no-unused-expressions": "warn",
+    "no-plusplus": "off",
+    "no-case-declarations": "off",
+    "radix": "off",
+    "consistent-return": "off",
+    "react/button-has-type": "off",
+    "camelcase": "off"
+  },
+  "overrides": [
+    {
+      "files": ["serviceWorker.js"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}
