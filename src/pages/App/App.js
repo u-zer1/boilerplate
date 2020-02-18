@@ -7,7 +7,7 @@ import './App.scss';
 const App = () => (
   <div className="root_page">
     <Header />
-    <main>
+    <main className="main">
       <Routes />
     </main>
     <Footer />
